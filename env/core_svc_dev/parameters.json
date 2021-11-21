@@ -1,0 +1,14 @@
+[
+    {
+        "ParameterKey": "Bucketname",
+        "ParameterValue": "venuvenu"
+    },
+    {
+        "ParameterKey": "Password",
+        "ParameterValue": "venu@1234"
+    },
+    {
+        "ParameterKey": "Username",
+        "ParameterValue": "venu-aws"
+    }
+]
