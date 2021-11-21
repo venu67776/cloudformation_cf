@@ -15,9 +15,7 @@ echo "Creating stack..."
   --stack-name ${STACK_NAME} \
   --template-body file:///home/ubuntu/cloudformation_cf/lab/s3.yaml \
   --capabilities CAPABILITY_NAMED_IAM \
-  --parameters ParameterKey=Username,ParameterValue=venu-aws \
-    	ParameterKey=Bucketname,ParameterValue=venuvenu \
-      ParameterKey=Password,ParameterValue=${PASSWORD} 
+  --parameters file:///home/ubuntu/cloudformation_cf/env/core_svc_dev/env.sh
     
 
 
