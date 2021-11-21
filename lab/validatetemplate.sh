@@ -4,4 +4,4 @@
 
 echo "validating stack..."
 aws cloudformation validate-template \
---template-body file:///home/ubuntu/cloudformation_cf/lab/s3.yaml 
+--template-body file://${DIR}/new2.yaml \
