@@ -9,8 +9,6 @@ if [ -z "$1" ]
     exit 1
 fi
 
-DIR="$(cd $(dirname $BASH_SOURCE) && pwd)"
-
 
 echo "Creating stack..."
   aws cloudformation create-stack \
