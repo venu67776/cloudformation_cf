@@ -1,6 +1,6 @@
-#!/bin/sh
+!/bin/sh
 
-# DIR="$(cd $(dirname $BASH_SOURCE) && pwd)"
+DIR="$(cd $(dirname $BASH_SOURCE) && pwd)"
 
 echo "validating stack..."
 aws cloudformation validate-template \
