@@ -15,7 +15,7 @@ echo "Creating stack..."
   --stack-name ${STACK_NAME} \
   --template-body file:///home/ubuntu/cloudformation_cf/lab/s3.yaml \
   --capabilities CAPABILITY_NAMED_IAM \
-  --parameters file:///home/ubuntu/cloudformation_cf/env/core_svc_dev/parameters.json
+  --parameters file:///home/ubuntu/cloudformation_cf/env/core_svc_dev/env.yml
     
 
 
