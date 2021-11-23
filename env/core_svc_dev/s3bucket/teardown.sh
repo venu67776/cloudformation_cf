@@ -1,7 +1,7 @@
 #!/bin/sh
 
-STACK_NAME=$1
+source  ../env.sh
 
 echo "delete stack..."
 aws cloudformation delete-stack \
---stack-name ${STACK_NAME}
+--stack-name ${Stackname}

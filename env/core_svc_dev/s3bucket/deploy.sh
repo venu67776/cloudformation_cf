@@ -1,23 +1,15 @@
-#!/bin/bash
+#!/bin/sh
+source  ../env.sh
 
-STACK_NAME=$1
-PASSWORD=$2
-
-if [ -z "$1" ]
-  then
-    echo "No STACK_NAME argument"
-    exit 1
-fi
-
+mydir=$(cd ../../../lab && pwd)
+echo $mydir
 
 echo "Creating stack..."
   aws cloudformation create-stack \
-  --stack-name ${STACK_NAME} \
-  --template-body file:///home/ubuntu/cloudformation_cf/lab/s3.yaml \
+  --stack-name ${Stackname} \
+  --template-body file://C:/Users/VENUGOPAL/Desktop/training/cloudformation_cf/lab/s3.yaml \
   --capabilities CAPABILITY_NAMED_IAM \
-  --parameters file:///home/ubuntu/cloudformation_cf/env/core_svc_dev/env.yml
-    
-
-
-
+  --parameters ParameterKey=Username,ParameterValue=${Username} \
+    	ParameterKey=Bucketname,ParameterValue=${Bucketname} \
+      ParameterKey=Password,ParameterValue=${Password}
 
