@@ -1,5 +1,5 @@
 #!/bin/bash
-source  ../env.sh
+.  ../env.sh
 
 mydir=$(cd ../../../lab && pwd)
 echo $mydir
