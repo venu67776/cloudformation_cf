@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 .  ../env.sh
 
 mydir=$(cd ../../../lab && pwd)
