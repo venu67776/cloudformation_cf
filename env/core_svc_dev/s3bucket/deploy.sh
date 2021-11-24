@@ -1,7 +1,9 @@
 #!/bin/sh
 .  ../env.sh
 
-mydir=$(cd ../../../lab && pwd)
+cd ../../../lab 
+mydir=`dirname $0`
+
 
 echo "Creating stack..."
   aws cloudformation create-stack \
